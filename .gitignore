@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+pxt_modules/
+built/
+.cache/
+*.log
+*.hex
+*.uf2
