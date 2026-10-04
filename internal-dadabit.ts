@@ -1,10 +1,10 @@
-/**
- * Adaptateur matériel DaDa:bit.
- * Seul ce fichier appelle directement l'API Hiwonder `dadabit`.
- */
+/** Adaptateur double DaDa:bit / simulation. */
 namespace msmInternal {
     export function initialiserCarte(): void {
-        dadabit.dadabit_init()
+        if (!msmSimTransport.estSimulation(false)) {
+            dadabit.dadabit_init()
+        }
+        msmSimTransport.envoyerInitialisation()
     }
 
     /**
@@ -13,36 +13,53 @@ namespace msmInternal {
      * de conserver exactement la sémantique historique de l'API publique.
      */
     export function commanderServo360(index: number, vitesseSignee: number): void {
-        if (vitesseSignee > 0) {
-            dadabit.setLego360Servo(index, dadabit.Oriention.Counterclockwise, vitesseSignee)
-        } else {
-            dadabit.setLego360Servo(index, dadabit.Oriention.Clockwise, -vitesseSignee)
+        if (!msmSimTransport.estSimulation(false)) {
+            if (vitesseSignee > 0) {
+                dadabit.setLego360Servo(index, dadabit.Oriention.Counterclockwise, vitesseSignee)
+            } else {
+                dadabit.setLego360Servo(index, dadabit.Oriention.Clockwise, -vitesseSignee)
+            }
         }
+        msmSimTransport.envoyerServo360(index, vitesseSignee)
     }
 
     export function positionnerServo270(index: number, angle: number, duree: number): void {
-        dadabit.setLego270Servo(index, angle, duree)
+        if (!msmSimTransport.estSimulation(false)) {
+            dadabit.setLego270Servo(index, angle, duree)
+        }
+        msmSimTransport.envoyerServo270(index, angle, duree)
     }
 
     /** Lit S1 à S4, dans le même ordre que l'implémentation historique. */
     export function lireQuatreCapteursLigne(): number {
-        let masque = 0
-        if (dadabit.line_followers(dadabit.LineFollowerSensors.S1, dadabit.LineColor.Black)) masque |= MasqueLigne.S1
-        if (dadabit.line_followers(dadabit.LineFollowerSensors.S2, dadabit.LineColor.Black)) masque |= MasqueLigne.S2
-        if (dadabit.line_followers(dadabit.LineFollowerSensors.S3, dadabit.LineColor.Black)) masque |= MasqueLigne.S3
-        if (dadabit.line_followers(dadabit.LineFollowerSensors.S4, dadabit.LineColor.Black)) masque |= MasqueLigne.S4
-        return masque
+        let masqueMateriel = 0
+        if (!msmSimTransport.estSimulation(false)) {
+            if (dadabit.line_followers(dadabit.LineFollowerSensors.S1, dadabit.LineColor.Black)) masqueMateriel |= MasqueLigne.S1
+            if (dadabit.line_followers(dadabit.LineFollowerSensors.S2, dadabit.LineColor.Black)) masqueMateriel |= MasqueLigne.S2
+            if (dadabit.line_followers(dadabit.LineFollowerSensors.S3, dadabit.LineColor.Black)) masqueMateriel |= MasqueLigne.S3
+            if (dadabit.line_followers(dadabit.LineFollowerSensors.S4, dadabit.LineColor.Black)) masqueMateriel |= MasqueLigne.S4
+        }
+        return msmSimTransport.masqueLigneOuMateriel(masqueMateriel)
     }
 
-    export function reglerLedsCarte(couleur: RGBColors): void {
-        dadabit.setBoardPixelRGB(dadabit.Lights.All, couleur)
+    export function reglerLedsCarte(couleur: number): void {
+        if (!msmSimTransport.estSimulation(false)) {
+            dadabit.setBoardPixelRGB(dadabit.Lights.All, couleur as RGBColors)
+        }
+        msmSimTransport.envoyerLeds(couleur, false)
     }
 
     export function afficherLedsCarte(): void {
-        dadabit.showBoardLight()
+        if (!msmSimTransport.estSimulation(false)) {
+            dadabit.showBoardLight()
+        }
+        msmSimTransport.envoyerLeds(msmSimTransport.derniereCouleurLed(), true)
     }
 
     export function eteindreLedsCarte(): void {
-        dadabit.clearBoardLight()
+        if (!msmSimTransport.estSimulation(false)) {
+            dadabit.clearBoardLight()
+        }
+        msmSimTransport.envoyerLeds(0, false)
     }
 }

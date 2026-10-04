@@ -11,6 +11,6 @@
  */
 
 //% color=#0EA5E9 icon="\uf02d" block="MSM Smart Tools"
-//% groups='["Init","Réglages","Capteurs ligne","Mouvements","Suivi de ligne","Vision (couleur)","Vision (chiffres)","Bras & Pince","Mission"]'
+//% groups='["Initialisation","Mouvement","Ligne","Vision","Manipulation","Feedback","Actionneurs","Réglages","Avancé","Compatibilité"]'
 namespace msmSmartTools {
 }

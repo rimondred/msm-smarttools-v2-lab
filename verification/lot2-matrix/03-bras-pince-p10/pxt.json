@@ -1,0 +1,14 @@
+{
+  "name": "msm-certification-03-bras-pince-p10",
+  "dependencies": {
+    "core": "*",
+    "msm-smarttools": "file:../../extension"
+  },
+  "files": [
+    "main.ts"
+  ],
+  "supportedTargets": [
+    "microbit"
+  ],
+  "preferredEditor": "tsprj"
+}

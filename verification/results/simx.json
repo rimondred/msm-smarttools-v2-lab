@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "testFiles": 2,
+  "testsPassed": 18,
+  "testsFailed": 0,
+  "build": "PASS",
+  "visionModes": ["color", "number", "face", "landmark", "classification"],
+  "commands": ["init", "servo360", "servo270", "visionMode", "leds", "run", "pause", "stop", "reset"],
+  "note": "Validation logicielle locale; aucune certification matérielle ni publication."
+}

@@ -1,0 +1,6 @@
+msmSmartTools.initialiserDaDabit()
+msmSmartTools.avancerPendant(55, 1000)
+msmSmartTools.faireTournerActionneur(1, 50)
+basic.pause(500)
+msmSmartTools.arreterActionneur(1)
+msmSmartTools.afficherEtat(msmSmartTools.EtatAffiche.Succes)

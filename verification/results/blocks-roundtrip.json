@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-10-04T22:29:02.460Z",
+  "method": "PXT decompile TypeScript→Blocks, concordance structurelle Blocks↔API, recompilation PXT du TypeScript représenté",
+  "passed": 3,
+  "expected": 3,
+  "results": [
+    {
+      "name": "essentiel",
+      "ok": true,
+      "apiBlocks": 5,
+      "xmlBytes": 1627
+    },
+    {
+      "name": "vision",
+      "ok": true,
+      "apiBlocks": 5,
+      "xmlBytes": 1246
+    },
+    {
+      "name": "ligne",
+      "ok": true,
+      "apiBlocks": 5,
+      "xmlBytes": 1061
+    }
+  ]
+}

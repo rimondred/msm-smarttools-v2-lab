@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-10-04T22:28:54.110Z",
+  "passed": 11,
+  "expected": 11,
+  "api": {
+    "baselineFunctions": 65,
+    "currentFunctions": 111,
+    "addedFunctions": 46,
+    "missing": [],
+    "signatureChanges": [],
+    "annotationChanges": [],
+    "uxAnnotationChanges": 65,
+    "blockIdChanges": []
+  },
+  "checks": [
+    {
+      "name": "API historique 65/65, signatures et block IDs inchangés",
+      "ok": true
+    },
+    {
+      "name": "dépendances fournisseur verrouillées",
+      "ok": true
+    },
+    {
+      "name": "API fournisseur confinée aux deux adaptateurs",
+      "ok": true
+    },
+    {
+      "name": "surface générale Lot 3 présente",
+      "ok": true
+    },
+    {
+      "name": "10 projets MSM-only",
+      "ok": true
+    },
+    {
+      "name": "matrice Lot 2 conservée",
+      "ok": true
+    },
+    {
+      "name": "3 scénarios futurs sans nouvelle primitive",
+      "ok": true
+    },
+    {
+      "name": "cinq familles WonderCam raccordées",
+      "ok": true
+    },
+    {
+      "name": "nouvelles attentes bornées et arrêt sûr",
+      "ok": true
+    },
+    {
+      "name": "blocs publics nouveaux annotés en français et types représentables",
+      "ok": true
+    },
+    {
+      "name": "preuves Blocs et documentation présentes",
+      "ok": true
+    }
+  ]
+}

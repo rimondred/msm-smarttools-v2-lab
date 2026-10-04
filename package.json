@@ -1,0 +1,21 @@
+{
+  "name": "msm-smarttools-v2-lot3-tooling",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "node verification/setup-pxt.mjs",
+    "build:pxt": "PXT_COMPILE_SWITCHES=csv---mbcodal pxt build",
+    "verify": "node verification/verify-lot3.mjs",
+    "test:logic": "node verification/runtime-tests.mjs",
+    "test:matrix": "node verification/compile-matrix.mjs",
+    "test:blocks": "node verification/blocks-roundtrip.mjs",
+    "test:ux": "node verification/ux-audit.mjs",
+    "docs:catalog": "node verification/generate-block-catalog.mjs",
+    "test": "npm run verify && npm run test:ux && npm run test:logic && npm run test:blocks"
+  },
+  "devDependencies": {
+    "pxt": "0.5.1",
+    "pxt-core": "13.0.1",
+    "pxt-microbit": "9.1.1"
+  }
+}

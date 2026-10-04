@@ -1,0 +1,1 @@
+{"name":"P10 AI Handler - validation MSM","dependencies":{"core":"*","MSM SmartTools Lot3":"file:../.."},"files":["main.ts"],"preferredEditor":"blocksprj","supportedTargets":["microbit"]}

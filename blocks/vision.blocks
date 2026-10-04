@@ -1,0 +1,44 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+<block id="xRRgvHNlG#rZ^u`HECiY" type="pxt-on-start">
+<statement name="HANDLER">
+<block id="BiFG+lP9Ri(6`m+_dYW0" type="msmSmartTools_initialiserDaDabit">
+<next>
+<block id="M{Q!e[o:CKWf:.[[@$B5" type="msmSmartTools_activerVision">
+<field name="mode">msmSmartTools.ModeVision.Landmark</field>
+<next>
+<block id="m?0I?!E_K*p5!)R@mGcw" type="controls_if">
+<mutation elseif="0" else="1" />
+<value name="IF0">
+<shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow>
+<block type="msmSmartTools_landmarkStable">
+<value name="id">
+<shadow type="math_number_minmax">
+<mutation min="1" max="5" label="Id" />
+<field name="SLIDER">2</field>
+</shadow>
+</value>
+<value name="confirmations">
+<shadow type="math_number_minmax">
+<mutation min="1" max="100" label="Confirmations" />
+<field name="SLIDER">5</field>
+</shadow>
+</value>
+</block>
+</value>
+<statement name="DO0">
+<block id="19wF3fc{8ye^LOBVxBpt" type="msmSmartTools_allumerLEDs">
+<field name="couleur">msmSmartTools.CouleurLED.Vert</field>
+</block>
+</statement>
+<statement name="ELSE">
+<block id="w#U(=$L6~?o)V])=A!G=" type="msmSmartTools_eteindreLEDs">
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</xml>

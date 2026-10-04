@@ -3,6 +3,9 @@ node_modules/
 pxt_modules/
 built/
 .cache/
+.pxt/
 *.log
 *.hex
 *.uf2
+verification/results/*.patch
+verification/results/*-manifest.json

@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-10-04T22:30:07.524Z",
+  "expected": 23,
+  "passed": 23,
+  "projectsPassed": 10,
+  "lot2MatrixPassed": 8,
+  "futureScenariosPassed": 3,
+  "results": [
+    {
+      "name": "api-historique-65",
+      "kind": "compatibilite",
+      "ok": true
+    },
+    {
+      "name": "api-lot3",
+      "kind": "surface",
+      "ok": true
+    },
+    {
+      "name": "01-initialisation",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "02-servos-360",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "03-bras-pince-p10",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "04-bras-3-axes-optionnel",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "05-capteurs-ligne",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "06-leds",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "07-wondercam",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "08-p10-guide",
+      "kind": "lot2",
+      "ok": true
+    },
+    {
+      "name": "p01-ai-greeter",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p02-ai-wing",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p03-ai-fan",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p04-ai-color-sorter",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p05-ai-robot-arm",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p06-ai-catapult",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p07-ai-waste-sorter",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p08-ai-multilegged-robot",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p09-ai-transporter",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "p10-ai-handler",
+      "kind": "projet",
+      "ok": true
+    },
+    {
+      "name": "parcours-landmark",
+      "kind": "futur",
+      "ok": true
+    },
+    {
+      "name": "porte-visage",
+      "kind": "futur",
+      "ok": true
+    },
+    {
+      "name": "tri-classification",
+      "kind": "futur",
+      "ok": true
+    }
+  ]
+}

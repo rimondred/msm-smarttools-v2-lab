@@ -4,13 +4,13 @@
  */
 namespace msmSmartTools {
     //% block="ne porte pas de cube ?"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=95
     export function nePortePasCube(): boolean {
         return msmInternal.modeMission == 0
     }
 
     //% block="gérer la destination (stop, déposer si besoin, demi-tour)"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=90
     export function destination(): void {
         arreterRobot()
         basic.pause(500)
@@ -34,7 +34,7 @@ namespace msmSmartTools {
     }
 
     //% block="cycle mission (1 étape)"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=85
     export function cycleMission(): void {
         mettreAJourCamera()
         mettreAJourCapteursLigne()
@@ -53,7 +53,7 @@ namespace msmSmartTools {
     }
 
     //% block="traiter le cube rouge"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=80
     export function traiterCubeRouge(): void {
         jouerBip()
         basic.pause(200)
@@ -66,7 +66,7 @@ namespace msmSmartTools {
     }
 
     //% block="traiter le cube vert"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=75
     export function traiterCubeVert(): void {
         jouerBip()
         basic.pause(200)
@@ -79,7 +79,7 @@ namespace msmSmartTools {
     }
 
     //% block="traiter le cube bleu"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=70
     export function traiterCubeBleu(): void {
         jouerBip()
         basic.pause(200)
@@ -92,7 +92,7 @@ namespace msmSmartTools {
     }
 
     //% block="traiter le cube jaune"
-    //% group="Mission"
+    //% group="Compatibilité" advanced=true subcategory="Compatibilité" weight=65
     export function traiterCubeJaune(): void {
         jouerBip()
         basic.pause(200)

@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-10-04T22:28:54.598Z",
+  "passed": 20,
+  "expected": 20,
+  "tests": [
+    {
+      "name": "initialisation neutre sans mouvement ni mode vision",
+      "ok": true
+    },
+    {
+      "name": "servo 360: vitesse bornée et canal invalide ignoré",
+      "ok": true
+    },
+    {
+      "name": "servo 360: arrêt ciblé",
+      "ok": true
+    },
+    {
+      "name": "servo 270: angle et durée bornés",
+      "ok": true
+    },
+    {
+      "name": "profil P9/P10: quatre roues",
+      "ok": true
+    },
+    {
+      "name": "profil P8: deux actionneurs",
+      "ok": true
+    },
+    {
+      "name": "profil P6: quatre servos synchrones",
+      "ok": true
+    },
+    {
+      "name": "ligne: lecture fraîche et capteur",
+      "ok": true
+    },
+    {
+      "name": "ligne: perte et intersection",
+      "ok": true
+    },
+    {
+      "name": "suivi sécurisé: perte provoque arrêt",
+      "ok": true
+    },
+    {
+      "name": "vision: cinq modes envoyés au simulateur",
+      "ok": true
+    },
+    {
+      "name": "vision couleur: détection et positions",
+      "ok": true
+    },
+    {
+      "name": "vision nombre: identifiant et confiance",
+      "ok": true
+    },
+    {
+      "name": "vision visage",
+      "ok": true
+    },
+    {
+      "name": "vision landmark",
+      "ok": true
+    },
+    {
+      "name": "vision classification",
+      "ok": true
+    },
+    {
+      "name": "stabilisation générique N confirmations",
+      "ok": true
+    },
+    {
+      "name": "timeout vision: résultat faux et arrêt sûr",
+      "ok": true
+    },
+    {
+      "name": "feedback: LEDs, état et bip",
+      "ok": true
+    },
+    {
+      "name": "manipulation et wrappers historiques",
+      "ok": true
+    }
+  ]
+}

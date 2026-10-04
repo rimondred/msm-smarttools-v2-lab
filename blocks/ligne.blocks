@@ -1,0 +1,37 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+<block id="xRRgvHNlG#rZ^u`HECiY" type="pxt-on-start">
+<statement name="HANDLER">
+<block id="Z[zyUZDtuY%zz*0MIB#t" type="msmSmartTools_initialiserDaDabit">
+<next>
+<block id="hRVZ[-mGAxumVL|8Wg#Q" type="msmSmartTools_configurerPropulsion">
+<field name="profil">msmSmartTools.ProfilPropulsion.QuatreRouesP9P10</field>
+<next>
+<block id="8U/M~Ei_Nnv7l}~vF~i*" type="controls_if">
+<mutation elseif="0" else="1" />
+<value name="IF0">
+<shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow>
+<block type="msmSmartTools_intersectionDetectee">
+</block>
+</value>
+<statement name="DO0">
+<block id="ZN-W!X6ztlPRMc*|9g*/" type="msmSmartTools_arreterRobot">
+</block>
+</statement>
+<statement name="ELSE">
+<block id="^B1#h,?((.74Yv70xeV=" type="msmSmartTools_suivreLigne">
+<value name="vitesse">
+<shadow type="math_number_minmax">
+<mutation min="0" max="100" label="Vitesse" />
+<field name="SLIDER">55</field>
+</shadow>
+</value>
+</block>
+</statement>
+</block>
+</next>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</xml>

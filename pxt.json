@@ -1,31 +1,37 @@
 {
-  "name": "MSM-Dadabit-Smart-Tools",
-  "version": "0.0.15",
-  "description": "MSM Smart Tools - DaDa:bit + WonderCam - blocs pedagogiques MSM MEDIAS",
-  "license": "MIT",
-  "author": "MSM MEDIAS",
-  "dependencies": {
-    "core": "*",
-    "dadabit": "github:hiwonderk12/DaDabit#19c8fa3889e228484d721fb7f3a88ef2734ac9bc",
-    "WonderCam": "github:Hiwonder/WonderCam#817bb6f32e0a5189a834618fe3718b28d3e531e7"
-  },
-  "files": [
-    "main.ts",
-    "types.ts",
-    "config.ts",
-    "internal-dadabit.ts",
-    "internal-wondercam.ts",
-    "movement.ts",
-    "line.ts",
-    "vision.ts",
-    "manipulation.ts",
-    "feedback.ts",
-    "compositions.ts",
-    "legacy.ts"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ],
-  "preferredEditor": "blocksprj",
-  "public": true
+    "name": "MSM-Dadabit-Smart-Tools-Lot3",
+    "version": "0.1.0",
+    "description": "MSM Smart Tools - DaDa:bit + WonderCam - blocs pedagogiques MSM MEDIAS",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "dadabit": "github:hiwonderk12/DaDabit#19c8fa3889e228484d721fb7f3a88ef2734ac9bc",
+        "WonderCam": "github:Hiwonder/WonderCam#817bb6f32e0a5189a834618fe3718b28d3e531e7",
+        "microphone": "*"
+    },
+    "files": [
+        "main.ts",
+        "types.ts",
+        "config.ts",
+        "sim-transport.ts",
+        "internal-dadabit.ts",
+        "internal-wondercam.ts",
+        "movement.ts",
+        "line.ts",
+        "vision.ts",
+        "manipulation.ts",
+        "feedback.ts",
+        "compositions.ts",
+        "legacy.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "author": "MSM MEDIAS"
 }
